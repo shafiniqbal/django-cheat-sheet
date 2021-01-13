@@ -2,7 +2,7 @@
 A cheat-sheet for creating web apps with the Django framework using the Python language. Most of the summaries and examples are based on [the official documentation](https://docs.djangoproject.com/en/2.0/) for Django v2.0.
 
 ## Sections
-- :snake: [Initializing pipenv](#snake-initializing-pipenv-optional) (optional)
+- :snake: [Initializing Virtual Environment](#snake-initializing-venv-optional) (optional)
 - :blue_book: [Creating a project](#blue_book-creating-a-project)
 - :page_with_curl: [Creating an app](#page_with_curl-creating-an-app)
 - :tv: [Creating a view](#tv-creating-a-view)
@@ -12,12 +12,14 @@ A cheat-sheet for creating web apps with the Django framework using the Python l
 - :man: [Using the Admin page](#man-using-the-admin-page)
 
 
-## :snake: Initializing pipenv (optional)
+## :snake: Initializing venv (optional)
 - Make main folder with `$ mkdir <folder>` and navigate to it with `$ cd <folder>`
-- Initialize pipenv with `$ pipenv install`
-- Enter pipenv shell with `$ pipenv shell`
-- Install django with `$ pipenv install django`
-- Install other package dependencies with `$ pipenv install <package_name>`
+- Install virtualenv package with pip: `$ pip install virtualenv`
+- Create venv in the current directory: `$ virtualenv <myenv>`
+- To Activate venv: `$ cd <myenv>` then `scripts/activate`
+- To install packages: `pip install django` (while activated)
+- To install from requirements.txt `$ pip install -r requirements.txt` 
+- To Deactivate: `$ Deactivate`
 
 ## :blue_book: Creating a project
 - Navigate to main folder with `$ cd <folder>`
