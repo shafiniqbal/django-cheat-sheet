@@ -20,6 +20,7 @@ A cheat-sheet for creating web apps with the Django framework using the Python l
 - To install packages: `pip install django` (while activated)
 - To install from requirements.txt `$ pip install -r requirements.txt` 
 - To Deactivate: `$ Deactivate`
+- Get requirements.txt `$ pip freeze > requirements.txt`
 
 ## :blue_book: Creating a project
 - Navigate to main folder with `$ cd <folder>`
